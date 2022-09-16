@@ -1,0 +1,147 @@
+*,
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    line-height: 1.6; /* paragraph */
+    background-color: var(--color-background);
+}
+img{
+    display: block;
+    width: 100%;
+}
+h1{
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-900);
+    color: var(--color-title);
+    margin-top: 10px;
+}   
+h3{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-700);
+}
+h3:last-of-type{
+    color: var(--color-paragraph);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+h3:last-of-type:hover{
+    color: var(--color-title);
+}
+p{
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-500);
+    color: var(--color-paragraph);
+}
+p.bold{
+    font-weight: var(--fw-900);
+}
+.annual-plan-center p.bold{
+    color: var(--color-title);
+}
+.annual-plan-right p.bold{
+    color: var(--color-button);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.annual-plan-right p.bold:hover{
+    color: var(--color-button-hover);
+    text-decoration: none;
+}
+.annual-plan p{
+    font-size: var(--fs-paragraph-smaller);
+}
+
+
+
+
+
+:root{
+    --color-background: hsl(225, 100%, 94%);
+    --color-button: hsl(245, 75%, 52%);
+    --color-title: hsl(223, 47%, 23%);
+    --color-paragraph: hsl(224, 23%, 55%);
+    --color-annual-plan-bg: hsl(225, 100%, 98%);
+
+    --color-button-hover: hsl(250, 93%, 63%);
+
+
+    --fs-h1: 1.5rem;
+    --fs-h3: .9rem;
+    --fs-paragraph: .9rem;
+    --fs-paragraph-smaller: .85rem;
+
+
+    --fw-900: 900;
+    --fw-700: 700;
+    --fw-500: 500;
+}
+
+
+.body-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 330px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.hero-image{
+    border-radius: 30px 30px 0 0;
+}
+
+.bottom{
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+}
+.bottom > p:first-of-type{
+    /* outline: 1px solid black; */
+    margin: 20px 10px;
+}
+
+.annual-plan{
+    /* outline: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-annual-plan-bg);
+    padding: 15px;
+    border-radius: 15px;
+}
+.annual-plan-center{
+    margin-right: 45px;
+}
+
+.button{
+    /* outline: 1px solid black; */
+    background-color: var(--color-button);
+    color: white;
+    padding: 15px 0;
+    border-radius: 15px;
+    margin: 30px 0;
+    cursor: pointer;
+    box-shadow: 0px 15px 10px hsl(246, 74%, 89%);
+
+    transition: all 0.2s ease-in-out;
+}
+.button:hover{
+    background-color: var(--color-button-hover);
+    box-shadow: 0px 15px 10px hsl(252, 52%, 90%);
+}
+
+
