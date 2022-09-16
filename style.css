@@ -150,3 +150,25 @@ p.bold{
 }
 
 
+@media screen and (min-width: 1024px){
+    :root{
+        --fs-h1: 1.75rem;
+        --fs-h3: 1rem;
+        --fs-paragraph: 1rem;
+        --fs-paragraph-smaller: .95rem;
+    }
+
+    .container{
+        max-width: 400px;
+    }
+
+    .bottom{
+        padding: 30px 30px 40px 30px;
+    }
+
+    .annual-plan-center{
+        margin-right: 65px;
+    }
+}
+
+
